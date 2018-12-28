@@ -15,6 +15,8 @@ namespace bai18
 	/// </summary>
 	public class Clsdiem
 	{
+		// khai báo biến chứa 2 điểm bất kì 
+		//không đặt dữ liệu = 0 vì nó sẽ xét giá trị mặc định = 0 tất cả
 		public int a,b;				
 		public Clsdiem()
 		{
@@ -49,6 +51,9 @@ namespace bai18
 		}
 		public static double khoangcach(Clsdiem A , Clsdiem B)
 		{
+			// công thức tính khoẩng cách 2 điểm 
+			// căn của bình phương hoành độ trước trừ hoành độ sau
+			// cộng với bình phương tung độ trước trừ tung độ sau
 			double kc = 0;
 			kc = Math.Sqrt(Math.Pow(A.a - B.a,2)+Math.Pow(A.b- B.b,2));
 			return kc;
