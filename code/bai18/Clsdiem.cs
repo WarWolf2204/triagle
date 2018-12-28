@@ -55,7 +55,7 @@ namespace bai18
 			// căn của bình phương hoành độ trước trừ hoành độ sau
 			// cộng với bình phương tung độ trước trừ tung độ sau
 			double kc = 0;
-			kc = Math.Sqrt(Math.Pow(A.a - B.a,2)+Math.Pow(A.b- B.b,2));
+			kc = Math.Sqrt(Math.Pow(A.a - B.a,2)+Math.Pow(A.b- B.b,2));//pow(.../2) nghĩa là mũ 2
 			return kc;
 		}
 	}
