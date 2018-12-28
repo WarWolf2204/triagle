@@ -18,7 +18,7 @@ namespace bai18
 		Clsdiem A = new Clsdiem();
 		Clsdiem B = new Clsdiem();
 		Clsdiem C = new Clsdiem();
-		
+		// khai báo sử dụng lại đối tượng
 		public tamgiac()
 		{
 			
@@ -30,7 +30,8 @@ namespace bai18
 			C = c;
 		}
 		public static double chuvi(Clsdiem A , Clsdiem B , Clsdiem C)
-		{
+		{	//cv đầu tiên không có dấu + vì nó là cách gán cơ số đầu tiên
+			//mỗi khoảng cách giữa 2 điểm ta cần 2 giá trị của đối tượng
 			double cv =0;
 			cv = Clsdiem.khoangcach(A,B);
 			cv+= Clsdiem.khoangcach(B,C);
@@ -39,6 +40,8 @@ namespace bai18
 		}
 		public static double dientich(Clsdiem A , Clsdiem B , Clsdiem C)
 		{
+			// dưới đây ta cần đặt giá trị mỗi cạnh = 0 trước để nhét biến vào
+			// công thức diện tích
 			double AB=0,BC=0,CA=0,dt=0;
 			double p;
 			AB = Clsdiem.khoangcach(A,B);
@@ -50,6 +53,10 @@ namespace bai18
 		}
 		public void Draw(Graphics g, Pen p)
 		{
+			// đây là sử dụng mảng (Array) để vẽ 
+			// 1 tam giác có 3 cạnh nên 
+			// phải sư dụng 4 điểm
+			// nếu dùng 3 điểm hình sẽ bị mất 1 cạnh
 			g.Clear(Color.White);
 			Point [] a = new Point[4];
 			a[0] = new Point(A.ix,A.iy);
