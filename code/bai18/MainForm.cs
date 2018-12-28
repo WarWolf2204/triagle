@@ -44,6 +44,9 @@ namespace bai18
 			A = new Clsdiem(int.Parse(hdA.Text),int.Parse(tdA.Text));
 			B = new Clsdiem(int.Parse(hdB.Text),int.Parse(tdB.Text));
 			C = new Clsdiem(int.Parse(hdC.Text),int.Parse(tdC.Text));
+			kcAB.Text = Clsdiem.khoangcach(A,B).ToString();
+			kcBC.Text = Clsdiem.khoangcach(B,C).ToString();
+			kcAC.Text = Clsdiem.khoangcach(A,C).ToString();
 			triangle = new tamgiac(A,B,C);
 			tbdientich.Text = tamgiac.dientich(A,B,C).ToString();
 			tbchuvi.Text = tamgiac.chuvi(A,B,C).ToString();
