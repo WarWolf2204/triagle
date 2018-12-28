@@ -16,7 +16,6 @@ namespace bai18
 	public class Clsdiem
 	{
 		// khai báo biến chứa 2 điểm bất kì 
-		//không đặt dữ liệu = 0 vì nó sẽ xét giá trị mặc định = 0 tất cả
 		public int a,b;				
 		public Clsdiem()
 		{
