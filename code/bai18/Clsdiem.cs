@@ -19,7 +19,8 @@ namespace bai18
 		public int a,b;				
 		public Clsdiem()
 		{
-		
+		    a= 0;
+		    b= 0;
 		}
 		public Clsdiem(int x , int y)
 		{
